@@ -1,0 +1,33 @@
+﻿<Properties StartupConfiguration="{10DF6FC1-1136-FAD0-32EB-03DAE83AFE4B}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Bomberman/Scripts/Game/Camera/GameMainCamera.cs">
+    <Files>
+      <File FileName="Assets/Bomberman/Scripts/Game/Camera/GameMainCamera.cs" Line="11" Column="6" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="unity_bomberman" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="Bomberman" expanded="True">
+                <Node name="Scripts" expanded="True">
+                  <Node name="Game" expanded="True">
+                    <Node name="Camera" expanded="True">
+                      <Node name="GameMainCamera.cs" selected="True" />
+                    </Node>
+                  </Node>
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="cc14c60c-6455-4526-b0d2-edbddc4f56a9" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
