@@ -30,6 +30,14 @@ namespace Bomberman {
 		/// 入力による移動処理
 		/// </summary>
 		private void MoveByInput() {
+			if (controller.IsButtonDown(GameController.Button.A)) {
+				Debug.Log("ButtonDown A");
+			}
+			if (controller.IsButtonUp(GameController.Button.A)) {
+				Debug.Log("ButtonUp A");
+			}
+
+			/*
 			if (controller.IsPress(GameController.DirectionKey.Up)) {
 				Debug.Log("Up");
 			} else if (controller.IsPress(GameController.DirectionKey.Left)) {
@@ -39,6 +47,7 @@ namespace Bomberman {
 			} else if (controller.IsPress(GameController.DirectionKey.Right)) {
 				Debug.Log("Right");
 			}
+			*/
 		}
 
 		GameController controller = new GameController();
