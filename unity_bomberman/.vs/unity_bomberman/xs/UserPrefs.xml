@@ -1,10 +1,9 @@
 ﻿<Properties StartupConfiguration="{10DF6FC1-1136-FAD0-32EB-03DAE83AFE4B}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Tests/EditModeTests/SimpleEditTest.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Bomberman/Scripts/Game/Player/Player.cs">
     <Files>
       <File FileName="Assets/Bomberman/Scripts/Game/Camera/GameMainCamera.cs" Line="21" Column="2" />
-      <File FileName="Assets/Bomberman/Scripts/Game/Player/Player.cs" Line="39" Column="1" />
+      <File FileName="Assets/Bomberman/Scripts/Game/Player/Player.cs" Line="118" Column="37" />
       <File FileName="Assets/MhCommon/Scripts/System/Input/GameController.cs" />
-      <File FileName="Assets/Tests/GameMainCameraTest.cs" Line="14" Column="10" />
       <File FileName="Assets/Tests/EditModeTests/SimpleEditTest.cs" Line="26" Column="3" />
     </Files>
     <Pads>
