@@ -45,20 +45,18 @@ namespace Bomberman {
 		/// </summary>
 		private void MoveByInput() {
 			controller.Update();
+			// 移動の方向を取る
 			MoveDirection moveDirection = MoveDirection.None;
 			if (controller.IsPress(GameController.DirectionKey.Up)) {
-				Debug.Log("Up");
 				moveDirection = MoveDirection.Up;
 			} else if (controller.IsPress(GameController.DirectionKey.Left)) {
-				Debug.Log("Left");
 				moveDirection = MoveDirection.Left;
 			} else if (controller.IsPress(GameController.DirectionKey.Down)) {
-				Debug.Log("Down");
 				moveDirection = MoveDirection.Down;
 			} else if (controller.IsPress(GameController.DirectionKey.Right)) {
-				Debug.Log("Right");
 				moveDirection = MoveDirection.Right;
 			}
+			// 方向に応じた移動をする
 			MoveByMoveDirection(moveDirection);
 		}
 
@@ -69,23 +67,18 @@ namespace Bomberman {
 			switch (moveDirection) {
 				case MoveDirection.Up:
 					velocity.z = -moveVelocity;
-					//rigidBody.AddForceAtPosition(new Vector3(0, 0, -1), rigidBody.position);
-
 					//PlayerTransform.rotation = Quaternion.Euler(0, 0, 0);
 					break;
 				case MoveDirection.Down:
 					velocity.z = moveVelocity;
-					//rigidBody.AddForceAtPosition(new Vector3(0, 0, 1), rigidBody.position);
 					//PlayerTransform.rotation = Quaternion.Euler(0, 270, 0);
 					break;
 				case MoveDirection.Right:
 					velocity.x = -moveVelocity;
-					//rigidBody.AddForceAtPosition(new Vector3(-1, 0, 0), rigidBody.position);
 					//PlayerTransform.rotation = Quaternion.Euler(0, 180, 0);
 					break;
 				case MoveDirection.Left:
 					velocity.x = moveVelocity;
-					//rigidBody.AddForceAtPosition(new Vector3(1, 0, 0), rigidBody.position);
 					//PlayerTransform.rotation = Quaternion.Euler(0, 90, 0);
 					break;
 				default:
@@ -93,16 +86,13 @@ namespace Bomberman {
 					velocity.x = 0;
 					velocity.y = 0;
 					velocity.z = 0;
-					//rigidBody.AddForceAtPosition(new Vector3(0, 0, 0), rigidBody.position);
 					break;
 			}
 			// 適用
 			rigidBody.velocity = velocity;
-			//rigidBody.AddForceAtPosition(Vector3.forward, rigidBody.position)
-			//rigidBody.MoveRotation(Quaternion.identity);
 		}
 
-		private float moveVelocity = 16.0f;
+		private float moveVelocity = 16.0f; // 移動速度
 
 		// 移動
 		private Rigidbody rigidBody;
