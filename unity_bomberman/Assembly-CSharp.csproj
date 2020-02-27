@@ -63,6 +63,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Bomberman\Scripts\Game\Bomb\Bomb001.cs" />
     <Compile Include="Assets\Bomberman\Scripts\Game\Camera\GameMainCamera.cs" />
     <Compile Include="Assets\Bomberman\Scripts\Game\Player\Player.cs" />
     <Compile Include="Assets\MhCommon\Scripts\System\Input\GameController.cs" />
