@@ -4,7 +4,7 @@
       <File FileName="Assets/Bomberman/Scripts/Game/Camera/GameMainCamera.cs" Line="21" Column="2" />
       <File FileName="Assets/Bomberman/Scripts/Game/Player/Player.cs" />
       <File FileName="Assets/MhCommon/Scripts/System/Input/GameController.cs" />
-      <File FileName="Assets/Bomberman/Scripts/Game/Bomb/Bomb001.cs" Line="5" Column="24" />
+      <File FileName="Assets/Bomberman/Scripts/Game/Bomb/Bomb001.cs" Line="18" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
