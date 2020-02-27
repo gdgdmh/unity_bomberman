@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Bomberman/Scenes/SampleScene.unity
+    guid: e4b1f25aa5c5647489ba53579f60880f
   m_configObjects: {}
