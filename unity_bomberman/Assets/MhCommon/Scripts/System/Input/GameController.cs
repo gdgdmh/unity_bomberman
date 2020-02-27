@@ -17,7 +17,11 @@ namespace MhCommon {
 					Up,
 					Down,
 					Right,
-					Left
+					Left,
+					RightUp,
+					RightDown,
+					LeftUp,
+					LeftDown
 				};
 
 				/// <summary>
@@ -39,8 +43,17 @@ namespace MhCommon {
 				/// <param name="key">対象の方向キー</param>
 				/// <returns>対象の方向キーが押されている間trueが返される</returns>
 				public bool IsPress(DirectionKey key) {
-					KeyCode keyCode = ConvertDirectionKeyToUnityKeyCode(key);
-					if (UnityEngine.Input.GetKey(keyCode)) {
+					KeyCode keyCode1, keyCode2;
+					ConvertDirectionKeyToUnityKeyCode(key, out keyCode1, out keyCode2);
+					if (keyCode2 != KeyCode.None) {
+						// 複数キーを使うケース
+						if (UnityEngine.Input.GetKey(keyCode1) && UnityEngine.Input.GetKey(keyCode2)) {
+							return true;
+						}
+						return false;
+					}
+					if (UnityEngine.Input.GetKey(keyCode1)) {
+						// 単一キーを使うケース
 						return true;
 					}
 					return false;
@@ -76,21 +89,45 @@ namespace MhCommon {
 				/// 方向キーからUnityのKeyCodeに変換
 				/// </summary>
 				/// <param name="key">対象の方向キー</param>
-				/// <returns>UnityEngineのキーコード</returns>
-				private KeyCode ConvertDirectionKeyToUnityKeyCode(DirectionKey key) {
+				/// <param name="key1">UnityEngineのKeyCode</param>
+				/// <param name="key2">UnityEngineのKeyCode(複数のケースあり)</param>
+				private void ConvertDirectionKeyToUnityKeyCode(DirectionKey key, out KeyCode key1, out KeyCode key2) {
+					key1 = KeyCode.None;
+					key2 = KeyCode.None;
 					switch (key) {
 						case DirectionKey.Up:
-							return KeyCode.UpArrow;
+							key1 = KeyCode.UpArrow;
+							break;
 						case DirectionKey.Down:
-							return KeyCode.DownArrow;
+							key1 = KeyCode.DownArrow;
+							break;
 						case DirectionKey.Right:
-							return KeyCode.RightArrow;
+							key1 = KeyCode.RightArrow;
+							break;
 						case DirectionKey.Left:
-							return KeyCode.LeftArrow;
+							key1 = KeyCode.LeftArrow;
+							break;
+						case DirectionKey.RightUp:
+							key1 = KeyCode.RightArrow;
+							key2 = KeyCode.UpArrow;
+							break;
+						case DirectionKey.RightDown:
+							key1 = KeyCode.RightArrow;
+							key2 = KeyCode.DownArrow;
+							break;
+						case DirectionKey.LeftUp:
+							key1 = KeyCode.LeftArrow;
+							key2 = KeyCode.UpArrow;
+							break;
+						case DirectionKey.LeftDown:
+							key1 = KeyCode.LeftArrow;
+							key2 = KeyCode.DownArrow;
+							break;
 						default:
-							return KeyCode.None;
+							break;
 					}
 				}
+
 
 				/// <summary>
 				/// ボタンからUnityのKeyCodeに変換

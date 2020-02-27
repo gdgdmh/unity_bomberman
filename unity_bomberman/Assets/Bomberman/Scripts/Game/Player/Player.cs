@@ -13,7 +13,11 @@ namespace Bomberman {
 			Up,
 			Down,
 			Left,
-			Right
+			Right,
+			RightUp,
+			RightDown,
+			LeftUp,
+			LeftDown
 		};
 
 		/// <summary>
@@ -47,7 +51,15 @@ namespace Bomberman {
 			controller.Update();
 			// 移動の方向を取る
 			MoveDirection moveDirection = MoveDirection.None;
-			if (controller.IsPress(GameController.DirectionKey.Up)) {
+			if (controller.IsPress(GameController.DirectionKey.RightUp)) {
+				moveDirection = MoveDirection.RightUp;
+			} else if (controller.IsPress(GameController.DirectionKey.RightDown)) {
+				moveDirection = MoveDirection.RightDown;
+			} else if (controller.IsPress(GameController.DirectionKey.LeftUp)) {
+				moveDirection = MoveDirection.LeftUp;
+			} else if (controller.IsPress(GameController.DirectionKey.LeftDown)) {
+				moveDirection = MoveDirection.LeftDown;
+			} else if (controller.IsPress(GameController.DirectionKey.Up)) {
 				moveDirection = MoveDirection.Up;
 			} else if (controller.IsPress(GameController.DirectionKey.Left)) {
 				moveDirection = MoveDirection.Left;
@@ -81,6 +93,27 @@ namespace Bomberman {
 					velocity.x = moveVelocity;
 					PlayerTransform.rotation = Quaternion.Euler(0, 270, 0);
 					break;
+				case MoveDirection.RightUp:
+					velocity.x = -moveVelocity;
+					velocity.z = -moveVelocity;
+					PlayerTransform.rotation = Quaternion.Euler(0, 45, 0);
+					break;
+				case MoveDirection.RightDown:
+					velocity.x = -moveVelocity;
+					velocity.z = moveVelocity;
+					PlayerTransform.rotation = Quaternion.Euler(0, 135, 0);
+					break;
+				case MoveDirection.LeftUp:
+					velocity.x = moveVelocity;
+					velocity.z = -moveVelocity;
+					PlayerTransform.rotation = Quaternion.Euler(0, 315, 0);
+					break;
+				case MoveDirection.LeftDown:
+					velocity.x = moveVelocity;
+					velocity.z = moveVelocity;
+					PlayerTransform.rotation = Quaternion.Euler(0, 225, 0);
+					break;
+
 				default:
 					// 方向入力なかったら止まる
 					velocity.x = 0;
