@@ -67,19 +67,19 @@ namespace Bomberman {
 			switch (moveDirection) {
 				case MoveDirection.Up:
 					velocity.z = -moveVelocity;
-					//PlayerTransform.rotation = Quaternion.Euler(0, 0, 0);
+					PlayerTransform.rotation = Quaternion.Euler(0, 0, 0);
 					break;
 				case MoveDirection.Down:
 					velocity.z = moveVelocity;
-					//PlayerTransform.rotation = Quaternion.Euler(0, 270, 0);
+					PlayerTransform.rotation = Quaternion.Euler(0, 180, 0);
 					break;
 				case MoveDirection.Right:
 					velocity.x = -moveVelocity;
-					//PlayerTransform.rotation = Quaternion.Euler(0, 180, 0);
+					PlayerTransform.rotation = Quaternion.Euler(0, 90, 0);
 					break;
 				case MoveDirection.Left:
 					velocity.x = moveVelocity;
-					//PlayerTransform.rotation = Quaternion.Euler(0, 90, 0);
+					PlayerTransform.rotation = Quaternion.Euler(0, 270, 0);
 					break;
 				default:
 					// 方向入力なかったら止まる
