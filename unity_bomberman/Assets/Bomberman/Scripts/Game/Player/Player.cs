@@ -41,14 +41,28 @@ namespace Bomberman {
 		/// 入力処理
 		/// </summary>
 		private void ProcessByInput() {
+			// コントローラー処理更新
+			controller.Update();
+			// 移動処理
 			MoveByInput();
+			// 攻撃処理
+			AttackByInput();
+		}
+
+		/// <summary>
+		/// 入力による攻撃処理
+		/// </summary>
+		private void AttackByInput() {
+			// 爆弾を置く
+			if (controller.IsButtonDown(GameController.Button.A)) {
+				Debug.Log("ButtonA");
+			}
 		}
 
 		/// <summary>
 		/// 入力による移動処理
 		/// </summary>
 		private void MoveByInput() {
-			controller.Update();
 			// 移動の方向を取る
 			MoveDirection moveDirection = MoveDirection.None;
 			if (controller.IsPress(GameController.DirectionKey.RightUp)) {
