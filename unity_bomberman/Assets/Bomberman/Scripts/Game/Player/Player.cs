@@ -20,6 +20,8 @@ namespace Bomberman {
 			LeftDown
 		};
 
+		private static readonly string BombPrefabPath = "Prefabs/Bomb001";
+
 		/// <summary>
 		/// 開始処理
 		/// </summary>
@@ -56,6 +58,10 @@ namespace Bomberman {
 			// 爆弾を置く
 			if (controller.IsButtonDown(GameController.Button.A)) {
 				Debug.Log("ButtonA");
+				GameObject bomb = Resources.Load(BombPrefabPath) as GameObject;
+				Vector3 position = PlayerTransform.position;
+				position = BombPosition.Get(position);
+				Instantiate(bomb, position, Quaternion.identity);
 			}
 		}
 
