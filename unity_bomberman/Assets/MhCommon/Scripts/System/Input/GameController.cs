@@ -5,6 +5,10 @@ using UnityEngine;
 namespace MhCommon {
 	namespace System {
 		namespace Input {
+
+			/// <summary>
+			/// Unityの入力をコントローラーとして扱うクラス
+			/// </summary>
             public class GameController {
 
 				public GameController() {

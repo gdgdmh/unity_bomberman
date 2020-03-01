@@ -9,6 +9,7 @@ public class Bomb001 : MonoBehaviour {
     // Start is called before the first frame update
     void Start() {
         Debug.Log("Bomb001 Start");
+		// 3秒後に爆発する
         StartCoroutine(ExecuteExplosion(3.0f));
     }
 
@@ -16,6 +17,11 @@ public class Bomb001 : MonoBehaviour {
     void Update() {        
     }
 
+	/// <summary>
+	/// 爆発処理
+	/// </summary>
+	/// <param name="waitTime">何秒後に爆発するか</param>
+	/// <returns></returns>
 	private IEnumerator ExecuteExplosion(float waitTime) {
         yield return new WaitForSeconds(waitTime);
         Debug.Log("Explosion");
