@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class Bomb001 : MonoBehaviour {
 
-    public static readonly string ExplosionEffectPrefabPath = "Prefabs/Explosion001";
+    private static readonly string ExplosionEffectPrefabPath = "Prefabs/Explosion001";
+    private static readonly float PositionYOffset = 1;
 
     // Start is called before the first frame update
     void Start() {
@@ -25,11 +26,13 @@ public class Bomb001 : MonoBehaviour {
 	private IEnumerator ExecuteExplosion(float waitTime) {
         yield return new WaitForSeconds(waitTime);
         Debug.Log("Explosion");
+        Vector3 position = transform.position;
+        position.y += PositionYOffset;
 		// 爆発したら消滅
         Destroy(this.gameObject);
 		// 爆発エフェクトを生成
         GameObject effect = Resources.Load(ExplosionEffectPrefabPath) as GameObject;
-        Instantiate(effect, new Vector3(0, 0, 0), Quaternion.identity);
+        Instantiate(effect, position, Quaternion.identity);
 	}
 
 
