@@ -19,4 +19,8 @@ public class Explosion001Script : MonoBehaviour {
 		// パーティクル終了後に消滅する
 		Destroy(this.gameObject);
 	}
+
+	private void OnTriggerEnter(Collider other) {
+		Debug.Log("Explosion001Script OnTriggerEnter");
+	}
 }
