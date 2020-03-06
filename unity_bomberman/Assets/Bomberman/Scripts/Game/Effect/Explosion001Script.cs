@@ -21,6 +21,6 @@ public class Explosion001Script : MonoBehaviour {
 	}
 
 	private void OnTriggerEnter(Collider other) {
-		Debug.Log("Explosion001Script OnTriggerEnter");
+		Debug.Log(string.Format("Explosion001Script OnTriggerEnter tag={0}", other.tag));
 	}
 }

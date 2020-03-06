@@ -1,12 +1,12 @@
 ﻿<Properties StartupConfiguration="{10DF6FC1-1136-FAD0-32EB-03DAE83AFE4B}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/MhCommon/Scripts/System/Input/GameController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Bomberman/Scripts/Game/Effect/Explosion001Script.cs">
     <Files>
       <File FileName="Assets/Bomberman/Scripts/Game/Camera/GameMainCamera.cs" Line="4" Column="1" />
       <File FileName="Assets/Bomberman/Scripts/Game/Player/Player.cs" />
       <File FileName="Assets/MhCommon/Scripts/System/Input/GameController.cs" Line="7" Column="20" />
-      <File FileName="Assets/Bomberman/Scripts/Game/Bomb/Bomb001.cs" Line="31" Column="1" />
+      <File FileName="Assets/Bomberman/Scripts/Game/Bomb/Bomb001.cs" />
       <File FileName="Assets/Bomberman/Scripts/Game/Bomb/BombPosition.cs" />
-      <File FileName="Assets/Bomberman/Scripts/Game/Effect/Explosion001Script.cs" Line="24" Column="47" />
+      <File FileName="Assets/Bomberman/Scripts/Game/Effect/Explosion001Script.cs" Line="23" Column="47" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -18,7 +18,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="57d9af7a-02ca-4b0d-8ce2-6711d2b0733d" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="aec43d73-bebf-4f94-afe9-ac62a2935692" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
