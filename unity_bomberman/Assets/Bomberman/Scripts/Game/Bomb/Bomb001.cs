@@ -5,7 +5,7 @@ using UnityEngine;
 public class Bomb001 : MonoBehaviour {
 
     private static readonly string ExplosionEffectPrefabPath = "Prefabs/Explosion001";
-    private static readonly float PositionYOffset = 1;
+    private static readonly float PositionYOffset = 3;
 
     // Start is called before the first frame update
     void Start() {
@@ -25,11 +25,11 @@ public class Bomb001 : MonoBehaviour {
 	/// <returns></returns>
 	private IEnumerator ExecuteExplosion(float waitTime) {
         yield return new WaitForSeconds(waitTime);
-        Debug.Log("Explosion");
         Vector3 position = transform.position;
         position.y += PositionYOffset;
 		// 爆発したら消滅
         Destroy(this.gameObject);
+        //Debug.Log(string.Format("Bomb001::ExecuteExplosion position x={0} y={1} z={2}", position.x, position.y, position.z));
 		// 爆発エフェクトを生成
         GameObject effect = Resources.Load(ExplosionEffectPrefabPath) as GameObject;
         Instantiate(effect, position, Quaternion.identity);
