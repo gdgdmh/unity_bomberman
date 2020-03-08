@@ -65,6 +65,7 @@
   <ItemGroup>
     <Compile Include="Assets\Bomberman\Scripts\Game\Bomb\Bomb001.cs" />
     <Compile Include="Assets\Bomberman\Scripts\Game\Bomb\BombPosition.cs" />
+    <Compile Include="Assets\Bomberman\Scripts\Game\Bomb\CheckExplosionRange.cs" />
     <Compile Include="Assets\Bomberman\Scripts\Game\Camera\GameMainCamera.cs" />
     <Compile Include="Assets\Bomberman\Scripts\Game\Effect\Explosion001Script.cs" />
     <Compile Include="Assets\Bomberman\Scripts\Game\Player\Player.cs" />
