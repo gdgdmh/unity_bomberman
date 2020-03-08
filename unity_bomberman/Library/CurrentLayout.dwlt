@@ -463,19 +463,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Bomberman/Materials/Game/ItemBomb
+    - Assets/Bomberman/Models/Game
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Bomberman/Materials/Game/ItemBomb
+  - Assets/Bomberman/Models/Game
   m_LastFoldersGridSize: 16
   m_LastProjectPath: /Users/mh/Git/unity_bomberman/unity_bomberman
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 72270000
-    m_LastClickedID: 10098
+    m_SelectedIDs: f6280000
+    m_LastClickedID: 10486
     m_ExpandedIDs: 00000000182600007e260000382700004c2700007427000098270000a2270000b0270000de270000342800007a2800007c2800007e280000a4280000da280000dc280000ba2e000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -529,8 +529,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: acf9ffff
-    m_LastClickedInstanceID: -1620
+    m_SelectedInstanceIDs: 6aeeffff
+    m_LastClickedInstanceID: -4502
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000ac3500006a2a0000b62d0000bc2d0000d22d0000000000008c2600004a290000ee2b0000022b00000a2b0000060a00001a2c0000a62b0000
     m_RenameOverlay:
@@ -548,7 +548,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 3}
+      m_ClientGUIView: {fileID: 0}
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0
