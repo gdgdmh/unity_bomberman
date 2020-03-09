@@ -1,12 +1,12 @@
 ﻿<Properties StartupConfiguration="{10DF6FC1-1136-FAD0-32EB-03DAE83AFE4B}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Bomberman/Scripts/Game/Task/GameMainTask.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Bomberman/Scripts/Game/Bomb/CheckExplosionRange.cs">
     <Files>
-      <File FileName="Assets/Bomberman/Scripts/Game/Camera/GameMainCamera.cs" Line="8" Column="17" />
-      <File FileName="Assets/Bomberman/Scripts/Game/Player/Player.cs" />
-      <File FileName="Assets/MhCommon/Scripts/System/Input/GameController.cs" Line="9" Column="17" />
-      <File FileName="Assets/Bomberman/Scripts/Game/Bomb/Bomb001.cs" />
-      <File FileName="Assets/Bomberman/Scripts/Game/Effect/Explosion001Script.cs" />
-      <File FileName="Assets/Bomberman/Scripts/Game/Task/GameMainTask.cs" Line="6" Column="21" />
+      <File FileName="Assets/Bomberman/Scripts/Game/Player/Player.cs" Line="1" Column="1" />
+      <File FileName="Assets/MhCommon/Scripts/System/Input/GameController.cs" Line="1" Column="1" />
+      <File FileName="Assets/Bomberman/Scripts/Game/Bomb/Bomb001.cs" Line="1" Column="1" />
+      <File FileName="Assets/Bomberman/Scripts/Game/Effect/Explosion001Script.cs" Line="1" Column="1" />
+      <File FileName="Assets/Bomberman/Scripts/Game/Task/GameMainTask.cs" Line="41" Column="99" />
+      <File FileName="Assets/Bomberman/Scripts/Game/Bomb/CheckExplosionRange.cs" Line="36" Column="36" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -18,7 +18,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="e6dbf797-25f1-4afb-93ca-2059c70bb333" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="45be8333-f457-447b-936c-4c7f1e427295" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
