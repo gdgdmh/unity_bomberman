@@ -23,14 +23,13 @@ public class CheckExplosionRange {
 	/// <param name="explosionPosition">爆発可能な位置(複数)</param>
 	/// <param name="direction">方向</param>
 	/// <param name="position">基準位置(マス中央)</param>
-	/// <param name="blockOffset">ブロックの間隔(x,z)</param>
-	/// <param name="explosionRange"></param>
-	/// <param name="blockRange"></param>
-	public static void GetDirectionRange(out Vector3[] explosionPosition, Direction direction, Vector3 position, Vector3 blockOffset, Vector3 explosionRange, int blockRange) {
+	/// <param name="blockOffset">ブロックの間隔</param>
+	/// <param name="blockRange">最大何ブロック先まで届くか</param>
+	public static void GetDirectionRange(out Vector3[] explosionPosition, Direction direction, Vector3 position, float blockOffset, int blockRange) {
+		// 値を返す配列を作成
 		explosionPosition = new Vector3[0];
-
+		// Rayを使用するための方向を設定
 		Vector3 directionVector = Vector3.zero;
-		float baseDistance = 2.0f;
 		switch (direction) {
 			case Direction.Up:
 				directionVector = Vector3.back;
@@ -54,7 +53,7 @@ public class CheckExplosionRange {
 
 			// 爆発判定(Rayから特定レイヤーのオブジェクトがあるかによって判断)
 			LayerMask mask = LayerMask.NameToLayer("indestructible_block");
-			float maxDistance = (i + 1) * baseDistance; // マスの中央までの距離
+			float maxDistance = (i + 1) * blockOffset; // マスの中央までの距離
 
 			if (Physics.Raycast(basePosition, directionVector, maxDistance, mask)) {
 				Debug.Log("hit");
@@ -62,9 +61,9 @@ public class CheckExplosionRange {
 				return;
 			} else {
 				Debug.Log("not hit");
-				// 追加
+				// 配列追加
 				System.Array.Resize(ref explosionPosition, arrayCount);
-
+				// position設定
 				Vector3 outPosition = basePosition;
 				switch (direction) {
 					case Direction.Up:
