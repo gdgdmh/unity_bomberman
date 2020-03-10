@@ -92,10 +92,11 @@ public class CheckExplosionRange {
 		}
 	}
 
-	public static void GetRange(out Vector3[] upExplosionPosition, out Vector3[] downExplosionPosition, out Vector3[] leftExplosionPosition, out Vector3[] rightExplosionPosition, int upRange, int downRange, int leftRange, int rightRange, Vector3 position) {
-		upExplosionPosition = new Vector3[1]; // 仮
-		downExplosionPosition = new Vector3[1]; // 仮
-		leftExplosionPosition = new Vector3[1]; // 仮
-		rightExplosionPosition = new Vector3[1]; // 仮
+	public static void GetRange(out Vector3[] upExplosionPosition, out Vector3[] downExplosionPosition, out Vector3[] leftExplosionPosition, out Vector3[] rightExplosionPosition, int upRange, int downRange, int leftRange, int rightRange, Vector3 position, float blockOffset) {
+
+		GetDirectionRange(out upExplosionPosition, Direction.Up, position, blockOffset, upRange);
+		GetDirectionRange(out downExplosionPosition, Direction.Down, position, blockOffset, downRange);
+		GetDirectionRange(out leftExplosionPosition, Direction.Left, position, blockOffset, leftRange);
+		GetDirectionRange(out rightExplosionPosition, Direction.Right, position, blockOffset, rightRange);
 	}
 }
