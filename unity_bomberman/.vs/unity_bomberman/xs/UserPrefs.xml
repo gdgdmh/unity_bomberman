@@ -2,9 +2,9 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Bomberman/Scripts/Game/Task/GameMainTask.cs">
     <Files>
       <File FileName="Assets/Bomberman/Scripts/Game/Player/Player.cs" Line="1" Column="1" />
-      <File FileName="Assets/MhCommon/Scripts/System/Input/GameController.cs" />
-      <File FileName="Assets/Bomberman/Scripts/Game/Task/GameMainTask.cs" Line="45" Column="1" />
-      <File FileName="Assets/Bomberman/Scripts/Game/Bomb/CheckExplosionRange.cs" Line="51" Column="23" />
+      <File FileName="Assets/MhCommon/Scripts/System/Input/GameController.cs" Line="1" Column="1" />
+      <File FileName="Assets/Bomberman/Scripts/Game/Task/GameMainTask.cs" Line="52" Column="21" />
+      <File FileName="Assets/Bomberman/Scripts/Game/Bomb/CheckExplosionRange.cs" Line="98" Column="22" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -16,9 +16,11 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="587d5f66-0bbd-455e-a0ff-13d80680e11e" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="6856154a-16db-4f38-a8cb-6c426849ed99" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/mh/Git/unity_bomberman/unity_bomberman/Temp/UnityTempFile-4c4b91ca506e34f068266b3a6bfb544d" relfile="Temp/UnityTempFile-4c4b91ca506e34f068266b3a6bfb544d" line="57" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
 </Properties>

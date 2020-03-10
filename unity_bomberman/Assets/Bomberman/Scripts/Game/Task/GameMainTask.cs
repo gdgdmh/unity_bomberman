@@ -37,9 +37,8 @@ public class GameMainTask : MonoBehaviour {
 		if (Input.GetKeyDown(UnityEngine.KeyCode.KeypadEnter)) {
             Vector3[] explosionPosition;
             CheckExplosionRange.Direction direction = CheckExplosionRange.Direction.Up;
-            Vector3 position = new Vector3(0.0f, 0.0f, -10.0f);
+            Vector3 position = new Vector3(0.0f, 1.0f, -10.0f);
             float blockOffset = 2.0f; // ブロックの間隔は2
-            Vector3 explosionRange = new Vector3(1.9f, 1.9f, 1.9f); // ぴったりだとギリギリ当たる可能性があるので-0.1する
             int blockRange = 2; // 2ブロック先まで届く
             CheckExplosionRange.GetDirectionRange(out explosionPosition, direction, position, blockOffset, blockRange);
 
@@ -53,7 +52,6 @@ public class GameMainTask : MonoBehaviour {
             } else {
                 Debug.Log("pos null");
             }
-
         }
     }
 }

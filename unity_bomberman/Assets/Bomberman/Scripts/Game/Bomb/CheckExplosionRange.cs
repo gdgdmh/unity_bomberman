@@ -52,7 +52,8 @@ public class CheckExplosionRange {
 		for (int i = 0; i < blockRange; ++i) {
 
 			// 爆発判定(Rayから特定レイヤーのオブジェクトがあるかによって判断)
-			LayerMask mask = LayerMask.NameToLayer("indestructible_block");
+			int mask = 1 << 9;
+			//LayerMask mask = LayerMask.NameToLayer("indestructible_block");
 			float maxDistance = (i + 1) * blockOffset; // マスの中央までの距離
 
 			if (Physics.Raycast(basePosition, directionVector, maxDistance, mask)) {
