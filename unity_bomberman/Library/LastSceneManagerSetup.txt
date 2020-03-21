@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Bomberman/Scenes/UITest.unity
+- path: Assets/Bomberman/Scenes/SampleScene.unity
   isLoaded: 1
   isActive: 1
