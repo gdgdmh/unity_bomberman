@@ -1,10 +1,11 @@
 ﻿<Properties StartupConfiguration="{10DF6FC1-1136-FAD0-32EB-03DAE83AFE4B}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Bomberman/Scripts/Game/Player/Player.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Bomberman/Scripts/UITest/TestButtonScript.cs">
     <Files>
       <File FileName="Assets/Bomberman/Scripts/Game/Player/Player.cs" Line="12" Column="9" />
       <File FileName="Assets/MhCommon/Scripts/System/Input/GameController.cs" />
       <File FileName="Assets/Bomberman/Scripts/Game/Task/GameMainTask.cs" />
       <File FileName="Assets/Bomberman/Scripts/Game/Bomb/CheckExplosionRange.cs" />
+      <File FileName="Assets/Bomberman/Scripts/UITest/TestButtonScript.cs" Line="5" Column="15" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
