@@ -2,13 +2,18 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(GameObject))]
+
 public class Bomb001 : MonoBehaviour {
 
     private static readonly string ExplosionEffectPrefabPath = "Prefabs/Explosion001";
     private static readonly float PositionYOffset = 3;
+	private int explosionRange = 3;         // 爆発範囲
+	private float explosionXZOffset = 2.0f; // 爆発エフェクトのオフセット(XZ共通)
+	public GameObject map;
 
-    // Start is called before the first frame update
-    void Start() {
+	// Start is called before the first frame update
+	void Start() {
         Debug.Log("Bomb001 Start");
 		// 3秒後に爆発する
         StartCoroutine(ExecuteExplosion(3.0f));
@@ -86,6 +91,4 @@ public class Bomb001 : MonoBehaviour {
         Instantiate(effect, position, Quaternion.identity);
     }
 
-    private int explosionRange = 3;			// 爆発範囲
-    private float explosionXZOffset = 2.0f;	// 爆発エフェクトのオフセット(XZ共通)
 }
