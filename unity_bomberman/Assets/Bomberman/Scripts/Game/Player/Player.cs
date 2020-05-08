@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using MhCommon.System.Input;
+using Mhl.Input;
 
 namespace Bomberman {
 
