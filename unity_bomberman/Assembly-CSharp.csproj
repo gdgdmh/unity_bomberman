@@ -72,19 +72,16 @@
     <Compile Include="Assets\Bomberman\Scripts\Game\Task\GameMainTask.cs" />
     <Compile Include="Assets\Bomberman\Scripts\Title\TitleSceneScript.cs" />
     <Compile Include="Assets\Bomberman\Scripts\UITest\TestButtonScript.cs" />
-    <Compile Include="Assets\Mhl\Input\DragInfo.cs" />
-    <Compile Include="Assets\Mhl\Input\GameController.cs" />
-    <Compile Include="Assets\Mhl\Input\ISingleTouchActionable.cs" />
-    <Compile Include="Assets\Mhl\Input\ISingleTouchDragActionable.cs" />
-    <Compile Include="Assets\Mhl\Input\MoveInputInfo.cs" />
-    <Compile Include="Assets\Mhl\Input\SingleTouchActionBase.cs" />
-    <Compile Include="Assets\Mhl\Input\SingleTouchActionPc.cs" />
-    <Compile Include="Assets\Mhl\Input\SingleTouchActionSmartPhone.cs" />
-    <Compile Include="Assets\Mhl\Input\SingleTouchDragActionPc.cs" />
-    <Compile Include="Assets\Mhl\Input\TouchInfo.cs" />
-    <Compile Include="Assets\Mhl\Input\TouchInterface.cs" />
-    <Compile Include="Assets\Mhl\Input\UnitySingleTouchAction.cs" />
-    <Compile Include="Assets\Mhl\Input\UnitySingleTouchDragAction.cs" />
+    <Compile Include="Assets\Mhl\Input\GameController\GameController.cs" />
+    <Compile Include="Assets\Mhl\Input\Math\Direction.cs" />
+    <Compile Include="Assets\Mhl\Input\Num\Value.cs" />
+    <Compile Include="Assets\Mhl\Input\Observer\GenericSubject.cs" />
+    <Compile Include="Assets\Mhl\Input\Parameter\IParameterGetable.cs" />
+    <Compile Include="Assets\Mhl\Input\Random\Integer\IRandIntGeneratable.cs" />
+    <Compile Include="Assets\Mhl\Input\Random\Integer\RandIntSystem.cs" />
+    <Compile Include="Assets\Mhl\Input\Touch\ISingleTouchActionable.cs" />
+    <Compile Include="Assets\Mhl\Input\Touch\SingleTouchActionEditor.cs" />
+    <Compile Include="Assets\Mhl\Input\Touch\TouchInfo.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>/Users/mh/Git/unity_bomberman/unity_bomberman/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>

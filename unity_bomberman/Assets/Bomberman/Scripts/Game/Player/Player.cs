@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Mhl.Input;
+using Mhl;
 
 namespace Bomberman
 {
@@ -28,7 +28,7 @@ namespace Bomberman
         private Rigidbody rigidBody;
         private Transform PlayerTransform;
 
-        private GameController controller = new GameController();
+        private Mhl.GameController controller = new Mhl.GameController();
 
         // memo
         // RigidBodyの設定で
