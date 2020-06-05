@@ -22,6 +22,20 @@ namespace Bomberman
         };
 
         private static readonly string BombPrefabPath = "Prefabs/Bomb001";
+        private float moveVelocity = 16.0f; // 移動速度
+
+        // 移動
+        private Rigidbody rigidBody;
+        private Transform PlayerTransform;
+
+        private GameController controller = new GameController();
+
+        // memo
+        // RigidBodyの設定で
+        // Constraints
+        //	FreezePosition Yのみチェック
+        //	FreezeRotation X,Y,Z全てチェック
+        // としておく。そうでないと物理演算で余計な回転などが効いてしまう
 
         /// <summary>
         /// 開始処理
@@ -168,19 +182,5 @@ namespace Bomberman
             rigidBody.velocity = velocity;
         }
 
-        private float moveVelocity = 16.0f; // 移動速度
-
-        // 移動
-        private Rigidbody rigidBody;
-        private Transform PlayerTransform;
-
-        private GameController controller = new GameController();
-
-        // memo
-        // RigidBodyの設定で
-        // Constraints
-        //	FreezePosition Yのみチェック
-        //	FreezeRotation X,Y,Z全てチェック
-        // としておく。そうでないと物理演算で余計な回転などが効いてしまう
     }
 }
