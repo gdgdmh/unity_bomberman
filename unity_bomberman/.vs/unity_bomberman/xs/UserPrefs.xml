@@ -1,12 +1,5 @@
 ﻿<Properties StartupConfiguration="{10DF6FC1-1136-FAD0-32EB-03DAE83AFE4B}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Mhl/Input/SingleTouchActionBase.cs">
-    <Files>
-      <File FileName="Assets/Mhl/Input/SingleTouchActionPc.cs" Line="185" Column="14" />
-      <File FileName="Assets/Mhl/Input/SingleTouchActionSmartPhone.cs" Line="166" Column="11" />
-      <File FileName="Assets/Mhl/Input/TouchInfo.cs" Line="118" Column="24" />
-      <File FileName="Assets/Mhl/Input/SingleTouchDragActionPc.cs" Line="406" Column="5" />
-      <File FileName="Assets/Mhl/Input/SingleTouchActionBase.cs" Line="349" Column="13" />
-    </Files>
+  <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
@@ -16,14 +9,19 @@
                 <Node name="Scripts" expanded="True">
                   <Node name="Game" expanded="True">
                     <Node name="Bomb" expanded="True" />
-                    <Node name="Player" expanded="True" />
+                    <Node name="Camera" expanded="True" />
+                    <Node name="Effect" expanded="True" />
+                    <Node name="Player" expanded="True">
+                      <Node name="Player.cs" selected="True" />
+                    </Node>
+                    <Node name="Task" expanded="True" />
                   </Node>
+                  <Node name="Title" expanded="True" />
+                  <Node name="UITest" expanded="True" />
                 </Node>
               </Node>
               <Node name="Mhl" expanded="True">
-                <Node name="Input" expanded="True">
-                  <Node name="SingleTouchActionBase.cs" selected="True" />
-                </Node>
+                <Node name="Input" expanded="True" />
               </Node>
             </Node>
           </Node>
@@ -33,7 +31,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="5249a2e9-9fbf-47f7-b202-86122b76e46a" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="675316fe-a4da-4862-a69b-799ce5271854" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint file="/Users/mh/Git/unity_bomberman/unity_bomberman/Temp/UnityTempFile-4c4b91ca506e34f068266b3a6bfb544d" relfile="Temp/UnityTempFile-4c4b91ca506e34f068266b3a6bfb544d" line="57" column="1" />
