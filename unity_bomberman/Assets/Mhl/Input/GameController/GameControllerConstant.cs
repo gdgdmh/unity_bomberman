@@ -2,34 +2,37 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-/// <summary>
-/// ゲームコントローラー定義
-/// </summary>
-public class GameControllerConstant
+namespace Mhl
 {
     /// <summary>
-    /// 方向キー定義
+    /// ゲームコントローラー定義
     /// </summary>
-    public enum DirectionKey : int
+    public class GameControllerConstant
     {
-		Up,
-		Down,
-		Right,
-		Left,
-		RightUp,
-		RightDown,
-		LeftUp,
-		LeftDown
-	};
+        /// <summary>
+        /// 方向キー定義
+        /// </summary>
+        public enum DirectionKey : int
+        {
+            Up,
+            Down,
+            Right,
+            Left,
+            RightUp,
+            RightDown,
+            LeftUp,
+            LeftDown
+        };
 
-    /// <summary>
-    /// ボタン定義
-    /// </summary>
-	public enum Button : int
-	{
-		A,
-		B,
-		X,
-		Y
-	};
+        /// <summary>
+        /// ボタン定義
+        /// </summary>
+        public enum Button : int
+        {
+            A,
+            B,
+            X,
+            Y
+        };
+    }
 }
