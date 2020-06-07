@@ -74,6 +74,7 @@
     <Compile Include="Assets\Bomberman\Scripts\UITest\TestButtonScript.cs" />
     <Compile Include="Assets\Mhl\Input\GameController\GameController.cs" />
     <Compile Include="Assets\Mhl\Input\GameController\GameControllerConstant.cs" />
+    <Compile Include="Assets\Mhl\Input\GameController\GameControllerInputSubject.cs" />
     <Compile Include="Assets\Mhl\Input\GameController\IGameControllerInputObserverable.cs" />
     <Compile Include="Assets\Mhl\Input\Math\Direction.cs" />
     <Compile Include="Assets\Mhl\Input\Num\Value.cs" />
