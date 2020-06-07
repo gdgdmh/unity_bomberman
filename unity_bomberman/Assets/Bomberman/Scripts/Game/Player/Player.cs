@@ -75,7 +75,7 @@ namespace Bomberman
         private void AttackByInput()
         {
             // 爆弾を置く
-            if (controller.IsButtonDown(GameController.Button.A))
+            if (controller.IsButtonDown(GameControllerConstant.Button.A))
             {
                 Debug.Log("ButtonA");
                 GameObject bomb = Resources.Load(BombPrefabPath) as GameObject;
@@ -92,35 +92,35 @@ namespace Bomberman
         {
             // 移動の方向を取る
             MoveDirection moveDirection = MoveDirection.None;
-            if (controller.IsPress(GameController.DirectionKey.RightUp))
+            if (controller.IsPress(GameControllerConstant.DirectionKey.RightUp))
             {
                 moveDirection = MoveDirection.RightUp;
             }
-            else if (controller.IsPress(GameController.DirectionKey.RightDown))
+            else if (controller.IsPress(GameControllerConstant.DirectionKey.RightDown))
             {
                 moveDirection = MoveDirection.RightDown;
             }
-            else if (controller.IsPress(GameController.DirectionKey.LeftUp))
+            else if (controller.IsPress(GameControllerConstant.DirectionKey.LeftUp))
             {
                 moveDirection = MoveDirection.LeftUp;
             }
-            else if (controller.IsPress(GameController.DirectionKey.LeftDown))
+            else if (controller.IsPress(GameControllerConstant.DirectionKey.LeftDown))
             {
                 moveDirection = MoveDirection.LeftDown;
             }
-            else if (controller.IsPress(GameController.DirectionKey.Up))
+            else if (controller.IsPress(GameControllerConstant.DirectionKey.Up))
             {
                 moveDirection = MoveDirection.Up;
             }
-            else if (controller.IsPress(GameController.DirectionKey.Left))
+            else if (controller.IsPress(GameControllerConstant.DirectionKey.Left))
             {
                 moveDirection = MoveDirection.Left;
             }
-            else if (controller.IsPress(GameController.DirectionKey.Down))
+            else if (controller.IsPress(GameControllerConstant.DirectionKey.Down))
             {
                 moveDirection = MoveDirection.Down;
             }
-            else if (controller.IsPress(GameController.DirectionKey.Right))
+            else if (controller.IsPress(GameControllerConstant.DirectionKey.Right))
             {
                 moveDirection = MoveDirection.Right;
             }
