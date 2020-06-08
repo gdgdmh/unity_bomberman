@@ -10,11 +10,18 @@ namespace Mhl
     /// </summary>
     public class ButtonLongPressSubject : Mhl.GenericSubject<Mhl.IButtonLongPressObserverable>
     {
-        private bool isPushing = false;
+        private bool isPushing = false; // ボタンを押しているか
+        private int parameter = 0; // Callback用のパラメータ
 
         public bool Pushing
         {
             get { return isPushing; }
+        }
+
+        public int Parameter
+        {
+            set { parameter = value; }
+            get { return parameter; }
         }
 
         /// <summary>
@@ -26,7 +33,7 @@ namespace Mhl
             isPushing = true;
             foreach (var observer in observers)
             {
-                observer.StartLongPress(eventData);
+                observer.StartLongPress(eventData, parameter);
             }
             ExecuteRequestRemove();
         }
@@ -40,7 +47,7 @@ namespace Mhl
             isPushing = false;
             foreach (var observer in observers)
             {
-                observer.EndLongPress(eventData);
+                observer.EndLongPress(eventData, parameter);
             }
             ExecuteRequestRemove();
         }
@@ -53,7 +60,7 @@ namespace Mhl
         {
             foreach (var observer in observers)
             {
-                observer.LongPress();
+                observer.LongPress(parameter);
             }
             ExecuteRequestRemove();
         }

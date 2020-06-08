@@ -4,11 +4,16 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.EventSystems;
 
-public class GameHudTask : MonoBehaviour
+public class GameHudTask : MonoBehaviour, Mhl.IButtonLongPressObserverable
 {
     // Start is called before the first frame update
     void Start()
     {
+        var g = transform.Find("Canvas/UiLeft");
+        UnityEngine.Assertions.Assert.IsNotNull(g);
+        var script = g.GetComponent<Mhl.LongPressButton>();
+        script.AddLongPressObserver(this);
+        script.SetObserverParameter(1);
     }
 
     // Update is called once per frame
@@ -21,27 +26,22 @@ public class GameHudTask : MonoBehaviour
         Debug.Log(number);
     }
 
-    public void OnPointerDown(PointerEventData data)
-    {
-    }
-
-    public void OnPointerTest(UnityEngine.EventSystems.PointerEventData data)
-    {
-    }
-
-
-    public void OnTest(UnityEngine.EventSystems.BaseEventData data)
-    {
-        Debug.Log("OnTest");
-    }
-
-    public void OnPointerDownUiLeft()
-    {
-        Debug.Log("Left");
-    }
-
     public void OnPointerDownUiRight()
     {
     }
 
+    public void StartLongPress(PointerEventData eventData, int parameter)
+    {
+        Debug.Log("start" + parameter);
+    }
+
+    public void EndLongPress(PointerEventData eventData, int parameter)
+    {
+        Debug.Log("end" + parameter);
+    }
+
+    public void LongPress(int parameter)
+    {
+        Debug.Log("press" + parameter);
+    }
 }

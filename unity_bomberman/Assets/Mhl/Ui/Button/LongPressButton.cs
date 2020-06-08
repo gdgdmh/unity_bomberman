@@ -5,6 +5,10 @@ using UnityEngine.EventSystems;
 
 namespace Mhl
 {
+    /// <summary>
+    /// 長押しボタン用クラス
+    /// 長押し判定するボタンと同一階層でアタッチすることで使用する
+    /// </summary>
     public class LongPressButton :
         MonoBehaviour,
         UnityEngine.EventSystems.IPointerDownHandler,
@@ -46,6 +50,11 @@ namespace Mhl
         public void AddLongPressObserver(Mhl.IButtonLongPressObserverable observer)
         {
             longPressSubject.Add(observer);
+        }
+
+        public void SetObserverParameter(int parameter)
+        {
+            longPressSubject.Parameter = parameter;
         }
     }
 }
