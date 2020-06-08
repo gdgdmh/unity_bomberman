@@ -68,6 +68,8 @@
     <Compile Include="Assets\Bomberman\Scripts\Game\Bomb\CheckExplosionRange.cs" />
     <Compile Include="Assets\Bomberman\Scripts\Game\Camera\GameMainCamera.cs" />
     <Compile Include="Assets\Bomberman\Scripts\Game\Effect\Explosion001Script.cs" />
+    <Compile Include="Assets\Bomberman\Scripts\Game\Hud\GameHudTask.cs" />
+    <Compile Include="Assets\Bomberman\Scripts\Game\Hud\TestTask.cs" />
     <Compile Include="Assets\Bomberman\Scripts\Game\Player\Player.cs" />
     <Compile Include="Assets\Bomberman\Scripts\Game\Task\GameMainTask.cs" />
     <Compile Include="Assets\Bomberman\Scripts\Title\TitleSceneScript.cs" />
@@ -85,6 +87,9 @@
     <Compile Include="Assets\Mhl\Input\Touch\ISingleTouchActionable.cs" />
     <Compile Include="Assets\Mhl\Input\Touch\SingleTouchActionEditor.cs" />
     <Compile Include="Assets\Mhl\Input\Touch\TouchInfo.cs" />
+    <Compile Include="Assets\Mhl\Ui\Button\ButtonLongPressSubject.cs" />
+    <Compile Include="Assets\Mhl\Ui\Button\IButtonLongPressObserverable.cs" />
+    <Compile Include="Assets\Mhl\Ui\Button\LongPressButton.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>/Users/mh/Git/unity_bomberman/unity_bomberman/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
