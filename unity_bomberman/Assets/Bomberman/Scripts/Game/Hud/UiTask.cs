@@ -4,8 +4,9 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.EventSystems;
 
-public class GameHudTask : MonoBehaviour, Mhl.IButtonLongPressObserverable
+public class UiTask : MonoBehaviour, Mhl.IButtonLongPressObserverable
 {
+
     private static readonly string TouchUiLeftKeyObjectPath = "Canvas/UiLeft";
     private static readonly string TouchUiRightKeyObjectPath = "Canvas/UiRight";
     private static readonly string TouchUiUpKeyObjectPath = "Canvas/UiUp";
@@ -17,15 +18,41 @@ public class GameHudTask : MonoBehaviour, Mhl.IButtonLongPressObserverable
     private static readonly int MoveDown = 4;
     private static readonly int KeyA = 10;
 
+    List<bool> pressKeyList = null;
+    List<bool> buttonDownList = null;
+
     // Start is called before the first frame update
-    void Start()
+    public void Start()
     {
+        InitializeKeyList();
+        InitializeButtonDownList();
+
         // 長押しは標準ではできないのでオブザーバー登録して取得する
         // AボタンはUnity標準機能でOnClickに割り当て
         AddLongPressObserver(TouchUiLeftKeyObjectPath, MoveLeft);
         AddLongPressObserver(TouchUiRightKeyObjectPath, MoveRight);
         AddLongPressObserver(TouchUiUpKeyObjectPath, MoveUp);
         AddLongPressObserver(TouchUiDownKeyObjectPath, MoveDown);
+    }
+
+    private void InitializeKeyList()
+    {
+        int size = System.Enum.GetValues(typeof(Mhl.GameControllerConstant.DirectionKey)).Length;
+        pressKeyList = new List<bool>(size);
+        for (int i = 0; i < size; ++i)
+        {
+            pressKeyList.Add(false);
+        }
+    }
+
+    private void InitializeButtonDownList()
+    {
+        int size = System.Enum.GetValues(typeof(Mhl.GameControllerConstant.Button)).Length;
+        buttonDownList = new List<bool>(size);
+        for (int i = 0; i < size; ++i)
+        {
+            buttonDownList.Add(false);
+        }
     }
 
     /// <summary>
@@ -43,8 +70,9 @@ public class GameHudTask : MonoBehaviour, Mhl.IButtonLongPressObserverable
     }
 
     // Update is called once per frame
-    void Update()
+    public void Update()
     {
+        buttonDownList[(int)Mhl.GameControllerConstant.Button.A] = false;
     }
 
     public void OnClick(int number)
@@ -52,6 +80,7 @@ public class GameHudTask : MonoBehaviour, Mhl.IButtonLongPressObserverable
         if (number == KeyA)
         {
             Debug.Log("push A");
+            buttonDownList[(int)Mhl.GameControllerConstant.Button.A] = true;
         }
     }
 
@@ -62,7 +91,8 @@ public class GameHudTask : MonoBehaviour, Mhl.IButtonLongPressObserverable
     /// <param name="parameter">登録時に割り当てられたパラメーター</param>
     public void StartLongPress(PointerEventData eventData, int parameter)
     {
-        //Debug.Log("start" + parameter);
+        int index = GetParameterToDirectionKeyIndex(parameter);
+        pressKeyList[index] = true;
     }
 
     /// <summary>
@@ -72,7 +102,8 @@ public class GameHudTask : MonoBehaviour, Mhl.IButtonLongPressObserverable
     /// <param name="parameter">登録時に割り当てられたパラメーター</param>
     public void EndLongPress(PointerEventData eventData, int parameter)
     {
-        //Debug.Log("end" + parameter);
+        int index = GetParameterToDirectionKeyIndex(parameter);
+        pressKeyList[index] = false;
     }
 
     /// <summary>
@@ -84,18 +115,55 @@ public class GameHudTask : MonoBehaviour, Mhl.IButtonLongPressObserverable
         if (parameter == MoveLeft)
         {
             Debug.Log("press Left");
+            return;
         }
         if (parameter == MoveRight)
         {
             Debug.Log("press Right");
+            return;
         }
         if (parameter == MoveUp)
         {
             Debug.Log("press Up");
+            return;
         }
         if (parameter == MoveDown)
         {
             Debug.Log("press Down");
+            return;
         }
+    }
+
+    public bool IsPress(Mhl.GameControllerConstant.DirectionKey key)
+    {
+        return pressKeyList[(int)key];
+    }
+
+    public bool IsButtonDown(Mhl.GameControllerConstant.Button button)
+    {
+        return buttonDownList[(int)button];
+    }
+
+    private int GetParameterToDirectionKeyIndex(int parameter)
+    {
+        if (parameter == MoveLeft)
+        {
+            return (int)Mhl.GameControllerConstant.DirectionKey.Left;
+        }
+        if (parameter == MoveRight)
+        {
+            return (int)Mhl.GameControllerConstant.DirectionKey.Right;
+        }
+        if (parameter == MoveUp)
+        {
+            return (int)Mhl.GameControllerConstant.DirectionKey.Up;
+        }
+        if (parameter == MoveDown)
+        {
+            return (int)Mhl.GameControllerConstant.DirectionKey.Down;
+        }
+        // 特定のDirectionKey以外は指定できない
+        UnityEngine.Assertions.Assert.IsTrue(false);
+        return 0;
     }
 }

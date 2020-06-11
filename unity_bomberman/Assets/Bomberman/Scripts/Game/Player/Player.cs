@@ -29,6 +29,7 @@ namespace Bomberman
         private Transform PlayerTransform;
 
         private Mhl.GameController controller = new Mhl.GameController();
+        private UiTask uiTask = null;
 
         // memo
         // RigidBodyの設定で
@@ -45,6 +46,13 @@ namespace Bomberman
             // Componentを取得
             rigidBody = GetComponent<Rigidbody>();
             PlayerTransform = transform;
+
+            {
+                GameObject g = GameObject.Find("UI");
+                UnityEngine.Assertions.Assert.IsNotNull(g);
+                uiTask = g.GetComponent<UiTask>();
+                UnityEngine.Assertions.Assert.IsNotNull(uiTask);
+            }
         }
 
         /// <summary>
@@ -92,40 +100,94 @@ namespace Bomberman
         {
             // 移動の方向を取る
             MoveDirection moveDirection = MoveDirection.None;
-            if (controller.IsPress(GameControllerConstant.DirectionKey.RightUp))
+
+            // タッチ移動
+            moveDirection = GetUiControllerMoveDirection();
+            if (moveDirection != MoveDirection.None)
             {
-                moveDirection = MoveDirection.RightUp;
+                // 方向に応じた移動をする
+                MoveByMoveDirection(moveDirection);
+                return;
             }
-            else if (controller.IsPress(GameControllerConstant.DirectionKey.RightDown))
-            {
-                moveDirection = MoveDirection.RightDown;
-            }
-            else if (controller.IsPress(GameControllerConstant.DirectionKey.LeftUp))
-            {
-                moveDirection = MoveDirection.LeftUp;
-            }
-            else if (controller.IsPress(GameControllerConstant.DirectionKey.LeftDown))
-            {
-                moveDirection = MoveDirection.LeftDown;
-            }
-            else if (controller.IsPress(GameControllerConstant.DirectionKey.Up))
-            {
-                moveDirection = MoveDirection.Up;
-            }
-            else if (controller.IsPress(GameControllerConstant.DirectionKey.Left))
-            {
-                moveDirection = MoveDirection.Left;
-            }
-            else if (controller.IsPress(GameControllerConstant.DirectionKey.Down))
-            {
-                moveDirection = MoveDirection.Down;
-            }
-            else if (controller.IsPress(GameControllerConstant.DirectionKey.Right))
-            {
-                moveDirection = MoveDirection.Right;
-            }
+            // キー入力移動
+            moveDirection = GetControllerMoveDirection();
             // 方向に応じた移動をする
             MoveByMoveDirection(moveDirection);
+        }
+
+        private MoveDirection GetControllerMoveDirection()
+        {
+            if (controller.IsPress(GameControllerConstant.DirectionKey.RightUp))
+            {
+                return MoveDirection.RightUp;
+            }
+            if (controller.IsPress(GameControllerConstant.DirectionKey.RightDown))
+            {
+                return MoveDirection.RightDown;
+            }
+            if (controller.IsPress(GameControllerConstant.DirectionKey.LeftUp))
+            {
+                return MoveDirection.LeftUp;
+            }
+            if (controller.IsPress(GameControllerConstant.DirectionKey.LeftDown))
+            {
+                return MoveDirection.LeftDown;
+            }
+            if (controller.IsPress(GameControllerConstant.DirectionKey.Up))
+            {
+                return MoveDirection.Up;
+            }
+            if (controller.IsPress(GameControllerConstant.DirectionKey.Left))
+            {
+                return MoveDirection.Left;
+            }
+            if (controller.IsPress(GameControllerConstant.DirectionKey.Down))
+            {
+                return MoveDirection.Down;
+            }
+            if (controller.IsPress(GameControllerConstant.DirectionKey.Right))
+            {
+                return MoveDirection.Right;
+            }
+            return MoveDirection.None;
+        }
+
+        private MoveDirection GetUiControllerMoveDirection()
+        {
+            UnityEngine.Assertions.Assert.IsNotNull(uiTask);
+            if (uiTask.IsPress(GameControllerConstant.DirectionKey.Left))
+            {
+                if (uiTask.IsPress(GameControllerConstant.DirectionKey.Up))
+                {
+                    return MoveDirection.LeftUp;
+                }
+                if (uiTask.IsPress(GameControllerConstant.DirectionKey.Down))
+                {
+                    return MoveDirection.LeftDown;
+                }
+                return MoveDirection.Left;
+            }
+            if (uiTask.IsPress(GameControllerConstant.DirectionKey.Right))
+            {
+                if (uiTask.IsPress(GameControllerConstant.DirectionKey.Up))
+                {
+                    return MoveDirection.RightUp;
+                }
+                if (uiTask.IsPress(GameControllerConstant.DirectionKey.Down))
+                {
+                    return MoveDirection.RightDown;
+                }
+                return MoveDirection.Right;
+            }
+            if (uiTask.IsPress(GameControllerConstant.DirectionKey.Up))
+            {
+                return MoveDirection.Up;
+            }
+            if (uiTask.IsPress(GameControllerConstant.DirectionKey.Down))
+            {
+                return MoveDirection.Down;
+            }
+            return MoveDirection.None;
         }
 
         private void MoveByMoveDirection(MoveDirection moveDirection)

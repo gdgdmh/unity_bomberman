@@ -7,12 +7,16 @@ namespace Bomberman
 {
     public class TouchGameController
     {
-        public TouchGameController()
+        UiTask uiTask = null;
+
+        public TouchGameController(UiTask uiTask)
         {
+            this.uiTask = uiTask;
         }
 
         public void Update()
         {
+            uiTask.Update();
         }
 
         /// <summary>
@@ -22,7 +26,8 @@ namespace Bomberman
         /// <returns>対象の方向キーが押されている間trueが返される</returns>
         public bool IsPress(GameControllerConstant.DirectionKey key)
         {
-            return false;
+            UnityEngine.Assertions.Assert.IsNotNull(uiTask);
+            return uiTask.IsPress(key);
         }
 
         /// <summary>
@@ -32,7 +37,8 @@ namespace Bomberman
         /// <returns>対象のボタンがtrueなら押されている</returns>
         public bool IsButtonDown(GameControllerConstant.Button button)
         {
-            return false;
+            UnityEngine.Assertions.Assert.IsNotNull(uiTask);
+            return uiTask.IsButtonDown(button);
         }
 
         /// <summary>
@@ -42,7 +48,8 @@ namespace Bomberman
         /// <returns>trueなら持ち上げられた</returns>
         public bool IsButtonUp(GameControllerConstant.Button button)
         {
-            return false;
+            UnityEngine.Assertions.Assert.IsNotNull(uiTask);
+            return !uiTask.IsButtonDown(button);
         }
 
         /*
