@@ -82,15 +82,32 @@ namespace Bomberman
         /// </summary>
         private void AttackByInput()
         {
-            // 爆弾を置く
-            if (controller.IsButtonDown(GameControllerConstant.Button.A))
+            if (IsInputA())
             {
+                // 爆弾を置く
                 Debug.Log("ButtonA");
                 GameObject bomb = Resources.Load(BombPrefabPath) as GameObject;
                 Vector3 position = PlayerTransform.position;
                 position = BombPosition.Get(position);
                 Instantiate(bomb, position, Quaternion.identity);
+                return;
             }
+        }
+
+        private bool IsInputA()
+        {
+            // タッチ入力
+            UnityEngine.Assertions.Assert.IsNotNull(uiTask);
+            if (uiTask.IsButtonDown(GameControllerConstant.Button.A))
+            {
+                return true;
+            }
+            // キー入力
+            if (controller.IsButtonDown(GameControllerConstant.Button.A))
+            {
+                return true;
+            }
+            return false;
         }
 
         /// <summary>
