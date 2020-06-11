@@ -70,6 +70,7 @@
     <Compile Include="Assets\Bomberman\Scripts\Game\Effect\Explosion001Script.cs" />
     <Compile Include="Assets\Bomberman\Scripts\Game\Hud\GameHudTask.cs" />
     <Compile Include="Assets\Bomberman\Scripts\Game\Hud\TestTask.cs" />
+    <Compile Include="Assets\Bomberman\Scripts\Game\Hud\TouchGameController.cs" />
     <Compile Include="Assets\Bomberman\Scripts\Game\Player\Player.cs" />
     <Compile Include="Assets\Bomberman\Scripts\Game\Task\GameMainTask.cs" />
     <Compile Include="Assets\Bomberman\Scripts\Title\TitleSceneScript.cs" />
