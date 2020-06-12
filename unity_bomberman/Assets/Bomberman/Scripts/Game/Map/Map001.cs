@@ -2,17 +2,29 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Map001 : MonoBehaviour
+namespace Bomberman
 {
-    // Start is called before the first frame update
-    void Start()
+    public class Map001 : MonoBehaviour
     {
-        
-    }
+        private Map001BlockPosition blockPosition = new Map001BlockPosition();
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        void Start()
+        {
+            {
+                Vector3 v = blockPosition.ToVector3(Map001BlockPosition.Position.B2);
+                Debug.Log(string.Format("x={0} y={1} z={2}", v.x, v.y, v.z));
+            }
+            {
+                Vector3 v = blockPosition.ToVector3(Map001BlockPosition.Position.L10);
+                Debug.Log(string.Format("x={0} y={1} z={2}", v.x, v.y, v.z));
+            }
+
+
+        }
+
+        void Update()
+        {
+
+        }
     }
 }
