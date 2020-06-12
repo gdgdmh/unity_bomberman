@@ -2,19 +2,24 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Bomberman {
-    public class TestButtonScript : MonoBehaviour {
+namespace Bomberman
+{
+    public class TestButtonScript : MonoBehaviour
+    {
         // Start is called before the first frame update
-        void Start() {
+        void Start()
+        {
 
         }
 
         // Update is called once per frame
-        void Update() {
+        void Update()
+        {
 
         }
 
-        public void OnButtonClick() {
+        public void OnButtonClick()
+        {
             Debug.Log("button");
         }
     }
