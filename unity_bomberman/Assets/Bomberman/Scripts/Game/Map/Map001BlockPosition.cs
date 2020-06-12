@@ -14,7 +14,7 @@ namespace Bomberman
         public static readonly float BlockHalfHeight = 1.0f;    // ブロックの縦幅の半分
 
         private static readonly float A1_X = 12.0f;
-        private static readonly float A1_Y = BlockHeight;   // ブロックの配置のために浮かせる(そのままだと半分地面にめり込む)
+        private static readonly float A1_Y = BlockHalfHeight;// ブロックの配置のために浮かせる(そのままだと半分地面にめり込む)
         private static readonly float A1_Z = -12.0f;
 
         public enum Position : int

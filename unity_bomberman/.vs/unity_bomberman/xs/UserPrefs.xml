@@ -2,8 +2,12 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Bomberman/Scripts/Game/Map/Map001BlockPosition.cs">
     <Files>
       <File FileName="Assets/Bomberman/Scripts/Game/Task/GameMainTask.cs" Line="8" Column="19" />
-      <File FileName="Assets/Bomberman/Scripts/Game/Map/Map001BlockPosition.cs" Line="47" Column="10" />
-      <File FileName="Assets/Bomberman/Scripts/Game/Map/Map001.cs" Line="21" Column="1" />
+      <File FileName="Assets/Bomberman/Scripts/Game/Map/Map001BlockPosition.cs" Line="6" Column="2" />
+      <File FileName="Assets/Bomberman/Scripts/Game/Map/Map001.cs" Line="10" Column="1" />
+      <File FileName="Assets/Bomberman/Scripts/Game/Map/InnerBlock001Factory.cs" Line="18" Column="1" />
+      <File FileName="Assets/Bomberman/Scripts/Game/Bomb/Bomb001.cs" Line="11" Column="89" />
+      <File FileName="Assets/Bomberman/Scripts/Game/Bomb/CheckExplosionRange.cs" Line="67" Column="18" />
+      <File FileName="Assets/Bomberman/Scripts/Game/Player/Player.cs" Line="94" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">

@@ -71,6 +71,7 @@
     <Compile Include="Assets\Bomberman\Scripts\Game\Hud\TestTask.cs" />
     <Compile Include="Assets\Bomberman\Scripts\Game\Hud\TouchGameController.cs" />
     <Compile Include="Assets\Bomberman\Scripts\Game\Hud\UiTask.cs" />
+    <Compile Include="Assets\Bomberman\Scripts\Game\Map\InnerBlock001Factory.cs" />
     <Compile Include="Assets\Bomberman\Scripts\Game\Map\Map001.cs" />
     <Compile Include="Assets\Bomberman\Scripts\Game\Map\Map001BlockPosition.cs" />
     <Compile Include="Assets\Bomberman\Scripts\Game\Player\Player.cs" />
