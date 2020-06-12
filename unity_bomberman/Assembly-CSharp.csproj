@@ -74,6 +74,7 @@
     <Compile Include="Assets\Bomberman\Scripts\Game\Map\InnerBlock001Factory.cs" />
     <Compile Include="Assets\Bomberman\Scripts\Game\Map\Map001.cs" />
     <Compile Include="Assets\Bomberman\Scripts\Game\Map\Map001BlockPosition.cs" />
+    <Compile Include="Assets\Bomberman\Scripts\Game\Map\Map001BlockRandomCreate.cs" />
     <Compile Include="Assets\Bomberman\Scripts\Game\Player\Player.cs" />
     <Compile Include="Assets\Bomberman\Scripts\Game\Task\GameMainTask.cs" />
     <Compile Include="Assets\Bomberman\Scripts\Title\TitleSceneScript.cs" />
