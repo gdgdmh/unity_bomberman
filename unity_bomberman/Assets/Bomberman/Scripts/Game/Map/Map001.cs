@@ -10,6 +10,7 @@ namespace Bomberman
 
         void Start()
         {
+            /*
             {
                 Vector3 v = blockPosition.ToVector3(Map001BlockPosition.Position.B2);
                 Debug.Log(string.Format("x={0} y={1} z={2}", v.x, v.y, v.z));
@@ -25,6 +26,10 @@ namespace Bomberman
                 InnerBlock001Factory f = new InnerBlock001Factory();
                 f.Create(v);
             }
+            */
+
+            Map001Block001RandomCreate randomCreate = new Map001Block001RandomCreate();
+            randomCreate.Create();
 
 
 

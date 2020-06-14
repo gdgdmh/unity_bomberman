@@ -1,14 +1,8 @@
 ﻿<Properties StartupConfiguration="{10DF6FC1-1136-FAD0-32EB-03DAE83AFE4B}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Bomberman/Scripts/Game/Map/Map001BlockRandomCreate.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Bomberman/Scripts/Game/Task/GameMainTask.cs">
     <Files>
       <File FileName="Assets/Bomberman/Scripts/Game/Task/GameMainTask.cs" Line="8" Column="19" />
-      <File FileName="Assets/Bomberman/Scripts/Game/Map/Map001BlockPosition.cs" Line="6" Column="2" />
-      <File FileName="Assets/Bomberman/Scripts/Game/Map/Map001.cs" />
-      <File FileName="Assets/Bomberman/Scripts/Game/Map/InnerBlock001Factory.cs" />
-      <File FileName="Assets/Bomberman/Scripts/Game/Bomb/Bomb001.cs" />
-      <File FileName="Assets/Bomberman/Scripts/Game/Bomb/CheckExplosionRange.cs" />
-      <File FileName="Assets/Bomberman/Scripts/Game/Player/Player.cs" />
-      <File FileName="Assets/Bomberman/Scripts/Game/Map/Map001BlockRandomCreate.cs" Line="9" Column="6" />
+      <File FileName="Assets/Bomberman/Scripts/Game/Map/Map001BlockPosition.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -22,11 +16,11 @@
                     <Node name="Camera" expanded="True" />
                     <Node name="Effect" expanded="True" />
                     <Node name="Hud" expanded="True" />
-                    <Node name="Map" expanded="True">
-                      <Node name="Map001BlockRandomCreate.cs" selected="True" />
-                    </Node>
+                    <Node name="Map" expanded="True" />
                     <Node name="Player" expanded="True" />
-                    <Node name="Task" expanded="True" />
+                    <Node name="Task" expanded="True">
+                      <Node name="GameMainTask.cs" selected="True" />
+                    </Node>
                   </Node>
                   <Node name="Title" expanded="True" />
                   <Node name="UITest" expanded="True" />
