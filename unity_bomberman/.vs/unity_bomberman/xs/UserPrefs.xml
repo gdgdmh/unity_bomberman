@@ -1,12 +1,13 @@
 ﻿<Properties StartupConfiguration="{10DF6FC1-1136-FAD0-32EB-03DAE83AFE4B}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Bomberman/Scripts/Game/Map/Map001DestructableBlockPosition.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Bomberman/Scripts/Game/Map/Map001Block001RandomCreate.cs">
     <Files>
       <File FileName="Assets/Bomberman/Scripts/Game/Task/GameMainTask.cs" Line="8" Column="19" />
       <File FileName="Assets/Bomberman/Scripts/Game/Map/Map001BlockPosition.cs" Line="7" Column="37" />
-      <File FileName="Assets/Bomberman/Scripts/Game/Map/Map001Block001RandomCreate.cs" Line="9" Column="29" />
+      <File FileName="Assets/Bomberman/Scripts/Game/Map/Map001Block001RandomCreate.cs" Line="38" Column="10" />
       <File FileName="Assets/Bomberman/Scripts/Game/Map/Map001DestructableBlockPosition.cs" Line="82" Column="49" />
       <File FileName="Assets/Bomberman/Scripts/Game/Map/Map001.cs" Line="30" Column="1" />
       <File FileName="Assets/Bomberman/Scripts/Game/Map/Map001BlockPositionList.cs" Line="51" Column="10" />
+      <File FileName="Assets/Mhl/Input/Random/Integer/RandIntSystem.cs" Line="13" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -21,7 +22,7 @@
                     <Node name="Effect" expanded="True" />
                     <Node name="Hud" expanded="True" />
                     <Node name="Map" expanded="True">
-                      <Node name="Map001DestructableBlockPosition.cs" selected="True" />
+                      <Node name="Map001Block001RandomCreate.cs" selected="True" />
                     </Node>
                     <Node name="Player" expanded="True" />
                     <Node name="Task" expanded="True" />
@@ -34,6 +35,9 @@
                 <Node name="Input" expanded="True">
                   <Node name="GameController" expanded="True" />
                   <Node name="Observer" expanded="True" />
+                  <Node name="Random" expanded="True">
+                    <Node name="Integer" expanded="True" />
+                  </Node>
                   <Node name="Touch" expanded="True" />
                 </Node>
                 <Node name="Ui" expanded="True">
