@@ -43,6 +43,16 @@ namespace Bomberman
         }
 
         /// <summary>
+        /// 位置の取得
+        /// </summary>
+        /// <param name="index">取得するindex</param>
+        /// <returns>位置</returns>
+        public Map001BlockPosition.Position Get(int index)
+        {
+            return positions[index];
+        }
+
+        /// <summary>
         /// リストの中に指定されたPositionが存在しているか
         /// </summary>
         /// <param name="position">存在するかチェックするPosition</param>
