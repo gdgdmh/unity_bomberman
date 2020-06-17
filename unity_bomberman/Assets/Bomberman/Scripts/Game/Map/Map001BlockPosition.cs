@@ -4,19 +4,24 @@ using UnityEngine;
 
 namespace Bomberman
 {
+    /// <summary>
+    /// Map001のブロック位置取得クラス
+    /// </summary>
     public class Map001BlockPosition
     {
-        public static readonly int Width = 13;
-        public static readonly int Height = 13;
+        public static readonly int Width = 13;  // ブロックの横幅
+        public static readonly int Height = 13; // ブロックの縦幅
         public static readonly float BlockWidth = 2.0f;     // ブロックの横幅
         public static readonly float BlockHeight = 2.0f;    // ブロックの縦幅
         public static readonly float BlockHalfWidth = 1.0f;     // ブロックの横幅の半分
         public static readonly float BlockHalfHeight = 1.0f;    // ブロックの縦幅の半分
 
+        // A1(右上)のブロックの位置(Center)
         private static readonly float A1_X = 12.0f;
         private static readonly float A1_Y = BlockHalfHeight;// ブロックの配置のために浮かせる(そのままだと半分地面にめり込む)
         private static readonly float A1_Z = -12.0f;
 
+        // 位置の定数
         public enum Position : int
         {
             A1,A2,A3,A4,A5,A6,A7,A8,A9,A10,A11,A12,A13, // 1段目
@@ -32,6 +37,11 @@ namespace Bomberman
             K1,K2,K3,K4,K5,K6,K7,K8,K9,K10,K11,K12,K13,
             L1,L2,L3,L4,L5,L6,L7,L8,L9,L10,L11,L12,L13,
             M1,M2,M3,M4,M5,M6,M7,M8,M9,M10,M11,M12,M13
+        };
+
+        public enum Column : int
+        {
+            A, B, C, D, E, F, G, H, I, J, K, L, M
         };
 
         /// <summary>
@@ -136,5 +146,47 @@ namespace Bomberman
             };
         }
 
+        /*
+        public Position[] GetHorizontalPositions(int raw)
+        {
+            switch (raw)
+            {
+                case 1:
+                    break;
+                case 2:
+                    break;
+                case 3:
+                    break;
+                case 4:
+                    break;
+                case 5:
+                    break;
+                case 6:
+                    break;
+                case 7:
+                    break;
+                case 8:
+                    break;
+                case 9:
+                    break;
+                case 10:
+                    break;
+                case 11:
+                    break;
+                case 12:
+                    break;
+                case 13:
+                    break;
+                default:
+                    break;
+            }
+            return null;
+        }
+
+        public Position[] GetVertialPositions()
+        {
+            return null;
+        }
+        */
     }
 }
