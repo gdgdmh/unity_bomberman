@@ -1,13 +1,9 @@
 ﻿<Properties StartupConfiguration="{10DF6FC1-1136-FAD0-32EB-03DAE83AFE4B}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Bomberman/Scripts/Game/Map/Map001Block001RandomCreate.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Bomberman/Scripts/Game/Bomb/Bomb001.cs">
     <Files>
-      <File FileName="Assets/Bomberman/Scripts/Game/Task/GameMainTask.cs" Line="8" Column="19" />
-      <File FileName="Assets/Bomberman/Scripts/Game/Map/Map001BlockPosition.cs" Line="7" Column="37" />
-      <File FileName="Assets/Bomberman/Scripts/Game/Map/Map001Block001RandomCreate.cs" Line="38" Column="10" />
-      <File FileName="Assets/Bomberman/Scripts/Game/Map/Map001DestructableBlockPosition.cs" Line="82" Column="49" />
-      <File FileName="Assets/Bomberman/Scripts/Game/Map/Map001.cs" Line="30" Column="1" />
-      <File FileName="Assets/Bomberman/Scripts/Game/Map/Map001BlockPositionList.cs" Line="51" Column="10" />
-      <File FileName="Assets/Mhl/Input/Random/Integer/RandIntSystem.cs" Line="13" Column="1" />
+      <File FileName="Assets/Bomberman/Scripts/Game/Task/GameMainTask.cs" Line="11" Column="6" IsPinned="True" />
+      <File FileName="Assets/Bomberman/Scripts/Game/Bomb/BombPosition.cs" Line="1" Column="1" />
+      <File FileName="Assets/Bomberman/Scripts/Game/Bomb/Bomb001.cs" Line="3" Column="19" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -17,13 +13,13 @@
               <Node name="Bomberman" expanded="True">
                 <Node name="Scripts" expanded="True">
                   <Node name="Game" expanded="True">
-                    <Node name="Bomb" expanded="True" />
+                    <Node name="Bomb" expanded="True">
+                      <Node name="Bomb001.cs" selected="True" />
+                    </Node>
                     <Node name="Camera" expanded="True" />
                     <Node name="Effect" expanded="True" />
                     <Node name="Hud" expanded="True" />
-                    <Node name="Map" expanded="True">
-                      <Node name="Map001Block001RandomCreate.cs" selected="True" />
-                    </Node>
+                    <Node name="Map" expanded="True" />
                     <Node name="Player" expanded="True" />
                     <Node name="Task" expanded="True" />
                   </Node>
