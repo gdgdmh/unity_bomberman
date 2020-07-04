@@ -1,14 +1,28 @@
 fileFormatVersion: 2
-guid: a41c07da8d6f54faca7e6cb882d0d376
+guid: a714c83928ea941728035824e614dc4c
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
+    100002: EyeLeft
+    100004: EyeRight
+    100006: Sphere
     400000: //RootNode
+    400002: EyeLeft
+    400004: EyeRight
+    400006: Sphere
     2100000: BodyMaterial
-    2300000: //RootNode
-    3300000: //RootNode
+    2100002: EyeLeft
+    2100004: EyeRight
+    2300000: EyeLeft
+    2300002: EyeRight
+    2300004: Sphere
+    3300000: EyeLeft
+    3300002: EyeRight
+    3300004: Sphere
     4300000: Sphere
+    4300002: EyeLeft
+    4300004: EyeRight
   externalObjects: {}
   materials:
     importMaterials: 1

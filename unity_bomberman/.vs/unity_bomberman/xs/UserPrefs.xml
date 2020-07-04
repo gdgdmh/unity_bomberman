@@ -1,14 +1,13 @@
 ﻿<Properties StartupConfiguration="{10DF6FC1-1136-FAD0-32EB-03DAE83AFE4B}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Bomberman/Scripts/Game/Map/Map001BlockRandomCreate.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Bomberman/Scripts/Game/Map/Map001.cs">
     <Files>
-      <File FileName="Assets/Bomberman/Scripts/Game/Task/GameMainTask.cs" Line="8" Column="19" />
-      <File FileName="Assets/Bomberman/Scripts/Game/Map/Map001BlockPosition.cs" Line="6" Column="2" />
-      <File FileName="Assets/Bomberman/Scripts/Game/Map/Map001.cs" />
-      <File FileName="Assets/Bomberman/Scripts/Game/Map/InnerBlock001Factory.cs" />
+      <File FileName="Assets/Bomberman/Scripts/Game/Task/GameMainTask.cs" Line="11" Column="6" IsPinned="True" />
+      <File FileName="Assets/Bomberman/Scripts/Game/Bomb/BombPosition.cs" />
       <File FileName="Assets/Bomberman/Scripts/Game/Bomb/Bomb001.cs" />
-      <File FileName="Assets/Bomberman/Scripts/Game/Bomb/CheckExplosionRange.cs" />
-      <File FileName="Assets/Bomberman/Scripts/Game/Player/Player.cs" />
-      <File FileName="Assets/Bomberman/Scripts/Game/Map/Map001BlockRandomCreate.cs" Line="9" Column="6" />
+      <File FileName="Assets/Bomberman/Scripts/Game/Hud/UiTask.cs" />
+      <File FileName="Assets/Bomberman/Scripts/Game/Map/InnerBlock001Factory.cs" />
+      <File FileName="Assets/Bomberman/Scripts/Game/Map/Map001.cs" Line="1" Column="1" />
+      <File FileName="Assets/Bomberman/Scripts/Game/Map/Map001BlockPosition.cs" Line="12" Column="22" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -23,7 +22,7 @@
                     <Node name="Effect" expanded="True" />
                     <Node name="Hud" expanded="True" />
                     <Node name="Map" expanded="True">
-                      <Node name="Map001BlockRandomCreate.cs" selected="True" />
+                      <Node name="Map001.cs" selected="True" />
                     </Node>
                     <Node name="Player" expanded="True" />
                     <Node name="Task" expanded="True" />
@@ -36,6 +35,9 @@
                 <Node name="Input" expanded="True">
                   <Node name="GameController" expanded="True" />
                   <Node name="Observer" expanded="True" />
+                  <Node name="Random" expanded="True">
+                    <Node name="Integer" expanded="True" />
+                  </Node>
                   <Node name="Touch" expanded="True" />
                 </Node>
                 <Node name="Ui" expanded="True">
@@ -50,7 +52,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="b207c6b5-12ca-47eb-86c2-35b40ddf28f2" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="28788d00-0f92-46ec-9bcc-9571130874b5" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint file="/Users/mh/Git/unity_bomberman/unity_bomberman/Temp/UnityTempFile-4c4b91ca506e34f068266b3a6bfb544d" relfile="Temp/UnityTempFile-4c4b91ca506e34f068266b3a6bfb544d" line="57" column="1" />
