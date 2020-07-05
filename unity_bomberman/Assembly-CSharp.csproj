@@ -68,6 +68,7 @@
     <Compile Include="Assets\Bomberman\Scripts\Game\Bomb\CheckExplosionRange.cs" />
     <Compile Include="Assets\Bomberman\Scripts\Game\Camera\GameMainCamera.cs" />
     <Compile Include="Assets\Bomberman\Scripts\Game\Effect\Explosion001Script.cs" />
+    <Compile Include="Assets\Bomberman\Scripts\Game\Enemy\Enemy002.cs" />
     <Compile Include="Assets\Bomberman\Scripts\Game\Hud\TestTask.cs" />
     <Compile Include="Assets\Bomberman\Scripts\Game\Hud\TouchGameController.cs" />
     <Compile Include="Assets\Bomberman\Scripts\Game\Hud\UiTask.cs" />

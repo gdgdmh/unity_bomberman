@@ -1,13 +1,10 @@
 ﻿<Properties StartupConfiguration="{10DF6FC1-1136-FAD0-32EB-03DAE83AFE4B}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Bomberman/Scripts/Game/Map/Map001.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Bomberman/Scripts/Game/Enemy/Enemy002.cs">
     <Files>
       <File FileName="Assets/Bomberman/Scripts/Game/Task/GameMainTask.cs" Line="11" Column="6" IsPinned="True" />
-      <File FileName="Assets/Bomberman/Scripts/Game/Bomb/BombPosition.cs" />
-      <File FileName="Assets/Bomberman/Scripts/Game/Bomb/Bomb001.cs" />
-      <File FileName="Assets/Bomberman/Scripts/Game/Hud/UiTask.cs" />
-      <File FileName="Assets/Bomberman/Scripts/Game/Map/InnerBlock001Factory.cs" />
-      <File FileName="Assets/Bomberman/Scripts/Game/Map/Map001.cs" Line="1" Column="1" />
-      <File FileName="Assets/Bomberman/Scripts/Game/Map/Map001BlockPosition.cs" Line="12" Column="22" />
+      <File FileName="Assets/Bomberman/Scripts/Game/Bomb/BombPosition.cs" Line="1" Column="1" />
+      <File FileName="Assets/Bomberman/Scripts/Game/Enemy/Enemy002.cs" Line="22" Column="6" />
+      <File FileName="Assets/Bomberman/Scripts/Game/Player/Player.cs" Line="49" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -20,10 +17,11 @@
                     <Node name="Bomb" expanded="True" />
                     <Node name="Camera" expanded="True" />
                     <Node name="Effect" expanded="True" />
-                    <Node name="Hud" expanded="True" />
-                    <Node name="Map" expanded="True">
-                      <Node name="Map001.cs" selected="True" />
+                    <Node name="Enemy" expanded="True">
+                      <Node name="Enemy002.cs" selected="True" />
                     </Node>
+                    <Node name="Hud" expanded="True" />
+                    <Node name="Map" expanded="True" />
                     <Node name="Player" expanded="True" />
                     <Node name="Task" expanded="True" />
                   </Node>
@@ -52,7 +50,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="28788d00-0f92-46ec-9bcc-9571130874b5" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="44a3cf5f-a3c2-485c-a6b9-c3f3d7b7c755" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint file="/Users/mh/Git/unity_bomberman/unity_bomberman/Temp/UnityTempFile-4c4b91ca506e34f068266b3a6bfb544d" relfile="Temp/UnityTempFile-4c4b91ca506e34f068266b3a6bfb544d" line="57" column="1" />
