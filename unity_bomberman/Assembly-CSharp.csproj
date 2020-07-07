@@ -82,6 +82,7 @@
     <Compile Include="Assets\Bomberman\Scripts\Game\Task\GameMainTask.cs" />
     <Compile Include="Assets\Bomberman\Scripts\Title\TitleSceneScript.cs" />
     <Compile Include="Assets\Bomberman\Scripts\UITest\TestButtonScript.cs" />
+    <Compile Include="Assets\Mhl\Action\Move\ITargetPointStraightMoveCalcable.cs" />
     <Compile Include="Assets\Mhl\Input\GameController\GameController.cs" />
     <Compile Include="Assets\Mhl\Input\GameController\GameControllerConstant.cs" />
     <Compile Include="Assets\Mhl\Input\GameController\GameControllerInputSubject.cs" />
