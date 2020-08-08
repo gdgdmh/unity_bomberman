@@ -8,6 +8,8 @@ public class Enemy002 : MonoBehaviour
     private Rigidbody rigidBody;
     private Transform PlayerTransform;
 
+    private static readonly float speed = 1.0f;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -20,7 +22,15 @@ public class Enemy002 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        rigidBody.velocity = new Vector3(0, 0, 0.5f);
+        // bottom
+        rigidBody.velocity = new Vector3(0, 0, speed);
+        // left
+        //rigidBody.velocity = new Vector3(speed, 0, 0);
+        // right
+        //rigidBody.velocity = new Vector3(-speed, 0, 0);
+        // top
+        //rigidBody.velocity = new Vector3(0, 0, -speed);
+
         
     }
 }

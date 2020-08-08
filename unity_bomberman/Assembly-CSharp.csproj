@@ -99,6 +99,7 @@
     <Compile Include="Assets\Mhl\Ui\Button\ButtonLongPressSubject.cs" />
     <Compile Include="Assets\Mhl\Ui\Button\IButtonLongPressObserverable.cs" />
     <Compile Include="Assets\Mhl\Ui\Button\LongPressButton.cs" />
+    <None Include="Assets\Bomberman\Shaders\Minimal\MinimalSurfaceShader.shader" />
     <None Include="Assets\Bomberman\Shaders\Test\TestSurfaceShader.shader" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>/Users/mh/Git/unity_bomberman/unity_bomberman/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
